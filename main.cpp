@@ -2,12 +2,19 @@
 //
 
 #include <iostream>
+#include "RawDataInput.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello World" << endl;
-	
-	system("PAUSE");
+	RawDataInput rawDataInput("test.csv");
+
+	for (int i = 0; i < 100; i++)
+	{
+		cout << rawDataInput.rawData[0][i];
+
+	}
+
+	system("pause");
 }
